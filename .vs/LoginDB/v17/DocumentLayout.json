@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\LoginDB\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|c:\\users\\user\\source\\repos\\logindb\\logindb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|solutionrelative:logindb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|c:\\users\\user\\source\\repos\\logindb\\logindb\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|solutionrelative:logindb\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -39,6 +43,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LoginDB\\LoginDB\\Program.cs",
+              "RelativeDocumentMoniker": "LoginDB\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LoginDB\\LoginDB\\Program.cs",
+              "RelativeToolTip": "LoginDB\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T01:16:37.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LoginDB\\LoginDB\\Form1.cs",
               "RelativeDocumentMoniker": "LoginDB\\Form1.cs",
