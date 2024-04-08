@@ -52,7 +52,6 @@ namespace LoginDB
             this.txtLogin.Size = new System.Drawing.Size(150, 25);
             this.txtLogin.TabIndex = 0;
             this.txtLogin.Text = "Tela de Login";
-            this.txtLogin.Click += new System.EventHandler(this.txtLogin_Click);
             // 
             // lbUser
             // 
@@ -70,15 +69,19 @@ namespace LoginDB
             // 
             this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUser.Location = new System.Drawing.Point(28, 119);
+            this.txtUser.MaxLength = 20;
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(150, 20);
             this.txtUser.TabIndex = 2;
+            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
             // 
             // txtSenha
             // 
             this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSenha.Location = new System.Drawing.Point(28, 160);
+            this.txtSenha.MaxLength = 20;
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '•';
             this.txtSenha.Size = new System.Drawing.Size(150, 20);
             this.txtSenha.TabIndex = 4;
             // 
@@ -103,6 +106,7 @@ namespace LoginDB
             this.checkBoxSenha.TabIndex = 5;
             this.checkBoxSenha.Text = "Mostrar senha";
             this.checkBoxSenha.UseVisualStyleBackColor = true;
+            this.checkBoxSenha.CheckedChanged += new System.EventHandler(this.checkBoxSenha_CheckedChanged);
             // 
             // btnLogin
             // 
@@ -110,10 +114,10 @@ namespace LoginDB
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(27, 208);
+            this.btnLogin.Location = new System.Drawing.Point(28, 203);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 3, 3, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(150, 30);
+            this.btnLogin.Size = new System.Drawing.Size(149, 35);
             this.btnLogin.TabIndex = 6;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -142,7 +146,6 @@ namespace LoginDB
             this.lbCriarConta.Size = new System.Drawing.Size(119, 12);
             this.lbCriarConta.TabIndex = 8;
             this.lbCriarConta.Text = "Não possui uma conta?";
-            this.lbCriarConta.Click += new System.EventHandler(this.lbCriarConta_Click);
             // 
             // lkLbCriarConta
             // 
@@ -183,8 +186,6 @@ namespace LoginDB
         }
 
         #endregion
-
-        private System.Windows.Forms.Label txtLogin;
         private System.Windows.Forms.Label lbUser;
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtSenha;
@@ -194,6 +195,7 @@ namespace LoginDB
         private Button btnApagar;
         private Label lbCriarConta;
         private LinkLabel lkLbCriarConta;
+        private Label txtLogin;
     }
 }
 
