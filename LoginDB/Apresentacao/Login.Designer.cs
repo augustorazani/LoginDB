@@ -3,7 +3,7 @@ using System;
 using System.Windows.Forms;
 namespace LoginDB
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -45,30 +45,31 @@ namespace LoginDB
             // 
             // txtLogin
             // 
-            this.txtLogin.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLogin.Font = new System.Drawing.Font("Segoe UI Variable Display", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogin.ForeColor = System.Drawing.Color.Purple;
-            this.txtLogin.Location = new System.Drawing.Point(28, 45);
+            this.txtLogin.Location = new System.Drawing.Point(22, 20);
             this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(150, 25);
+            this.txtLogin.Size = new System.Drawing.Size(170, 30);
             this.txtLogin.TabIndex = 0;
-            this.txtLogin.Text = "Tela de Login";
+            this.txtLogin.Text = "Faça o seu login";
+            this.txtLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbUser
             // 
             this.lbUser.AutoSize = true;
             this.lbUser.BackColor = System.Drawing.Color.Transparent;
-            this.lbUser.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUser.Font = new System.Drawing.Font("Segoe UI Variable Display", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbUser.Location = new System.Drawing.Point(28, 101);
+            this.lbUser.Location = new System.Drawing.Point(29, 53);
             this.lbUser.Name = "lbUser";
-            this.lbUser.Size = new System.Drawing.Size(53, 15);
+            this.lbUser.Size = new System.Drawing.Size(55, 17);
             this.lbUser.TabIndex = 1;
             this.lbUser.Text = "Usuário:";
             // 
             // txtUser
             // 
             this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUser.Location = new System.Drawing.Point(28, 119);
+            this.txtUser.Location = new System.Drawing.Point(32, 73);
             this.txtUser.MaxLength = 20;
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(150, 20);
@@ -78,7 +79,7 @@ namespace LoginDB
             // txtSenha
             // 
             this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSenha.Location = new System.Drawing.Point(28, 160);
+            this.txtSenha.Location = new System.Drawing.Point(32, 114);
             this.txtSenha.MaxLength = 20;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '•';
@@ -89,20 +90,21 @@ namespace LoginDB
             // 
             this.lbSenha.AutoSize = true;
             this.lbSenha.BackColor = System.Drawing.Color.Transparent;
-            this.lbSenha.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSenha.Font = new System.Drawing.Font("Segoe UI Variable Display", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbSenha.Location = new System.Drawing.Point(28, 142);
+            this.lbSenha.Location = new System.Drawing.Point(29, 94);
             this.lbSenha.Name = "lbSenha";
-            this.lbSenha.Size = new System.Drawing.Size(42, 15);
+            this.lbSenha.Size = new System.Drawing.Size(45, 17);
             this.lbSenha.TabIndex = 3;
             this.lbSenha.Text = "Senha:";
             // 
             // checkBoxSenha
             // 
             this.checkBoxSenha.AutoSize = true;
-            this.checkBoxSenha.Location = new System.Drawing.Point(85, 185);
+            this.checkBoxSenha.Font = new System.Drawing.Font("Segoe UI Variable Display", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxSenha.Location = new System.Drawing.Point(60, 138);
             this.checkBoxSenha.Name = "checkBoxSenha";
-            this.checkBoxSenha.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxSenha.Size = new System.Drawing.Size(95, 19);
             this.checkBoxSenha.TabIndex = 5;
             this.checkBoxSenha.Text = "Mostrar senha";
             this.checkBoxSenha.UseVisualStyleBackColor = true;
@@ -112,12 +114,12 @@ namespace LoginDB
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Purple;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(28, 203);
+            this.btnLogin.Location = new System.Drawing.Point(32, 158);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 3, 3, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(149, 35);
+            this.btnLogin.Size = new System.Drawing.Size(150, 35);
             this.btnLogin.TabIndex = 6;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -126,46 +128,48 @@ namespace LoginDB
             // 
             this.btnApagar.BackColor = System.Drawing.Color.Gray;
             this.btnApagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnApagar.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApagar.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApagar.ForeColor = System.Drawing.Color.White;
-            this.btnApagar.Location = new System.Drawing.Point(27, 241);
+            this.btnApagar.Location = new System.Drawing.Point(32, 196);
             this.btnApagar.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
             this.btnApagar.Name = "btnApagar";
-            this.btnApagar.Size = new System.Drawing.Size(150, 30);
+            this.btnApagar.Size = new System.Drawing.Size(150, 35);
             this.btnApagar.TabIndex = 7;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = false;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // lbCriarConta
             // 
             this.lbCriarConta.AutoSize = true;
-            this.lbCriarConta.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCriarConta.Font = new System.Drawing.Font("Segoe UI Variable Display", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCriarConta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbCriarConta.Location = new System.Drawing.Point(43, 274);
+            this.lbCriarConta.Location = new System.Drawing.Point(42, 237);
             this.lbCriarConta.Name = "lbCriarConta";
-            this.lbCriarConta.Size = new System.Drawing.Size(119, 12);
+            this.lbCriarConta.Size = new System.Drawing.Size(131, 15);
             this.lbCriarConta.TabIndex = 8;
             this.lbCriarConta.Text = "Não possui uma conta?";
             // 
             // lkLbCriarConta
             // 
-            this.lkLbCriarConta.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lkLbCriarConta.AutoSize = true;
-            this.lkLbCriarConta.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lkLbCriarConta.AutoEllipsis = true;
+            this.lkLbCriarConta.Font = new System.Drawing.Font("Segoe UI Variable Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lkLbCriarConta.LinkColor = System.Drawing.Color.Purple;
-            this.lkLbCriarConta.Location = new System.Drawing.Point(61, 295);
+            this.lkLbCriarConta.Location = new System.Drawing.Point(32, 252);
             this.lkLbCriarConta.Name = "lkLbCriarConta";
             this.lkLbCriarConta.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lkLbCriarConta.Size = new System.Drawing.Size(87, 17);
+            this.lkLbCriarConta.Size = new System.Drawing.Size(150, 20);
             this.lkLbCriarConta.TabIndex = 9;
             this.lkLbCriarConta.TabStop = true;
             this.lkLbCriarConta.Text = "Criar Conta";
+            this.lkLbCriarConta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lkLbCriarConta.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkLbCriarConta_LinkClicked);
             // 
-            // Form1
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(209, 361);
+            this.ClientSize = new System.Drawing.Size(214, 291);
             this.Controls.Add(this.lkLbCriarConta);
             this.Controls.Add(this.lbCriarConta);
             this.Controls.Add(this.btnApagar);
@@ -177,8 +181,9 @@ namespace LoginDB
             this.Controls.Add(this.lbUser);
             this.Controls.Add(this.txtLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Form1";
-            this.Text = "Acessar Conta";
+            this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
