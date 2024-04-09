@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\LoginDB\LoginDB\bin\Debug\LoginDB.exe.config
+C:\Users\User\source\repos\LoginDB\LoginDB\bin\Debug\LoginDB.exe
+C:\Users\User\source\repos\LoginDB\LoginDB\bin\Debug\LoginDB.pdb
+C:\Users\User\source\repos\LoginDB\LoginDB\obj\Debug\LoginDB.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\LoginDB\LoginDB\obj\Debug\LoginDB.Form1.resources
+C:\Users\User\source\repos\LoginDB\LoginDB\obj\Debug\LoginDB.Properties.Resources.resources
+C:\Users\User\source\repos\LoginDB\LoginDB\obj\Debug\LoginDB.csproj.GenerateResource.cache
+C:\Users\User\source\repos\LoginDB\LoginDB\obj\Debug\LoginDB.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\LoginDB\LoginDB\obj\Debug\LoginDB.exe
+C:\Users\User\source\repos\LoginDB\LoginDB\obj\Debug\LoginDB.pdb
