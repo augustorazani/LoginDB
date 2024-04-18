@@ -37,6 +37,7 @@
             this.txtConfSenha = new System.Windows.Forms.TextBox();
             this.lbCrieUser = new System.Windows.Forms.Label();
             this.checkBoxSenha = new System.Windows.Forms.CheckBox();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCadastrar
@@ -49,7 +50,7 @@
             this.btnCadastrar.Margin = new System.Windows.Forms.Padding(3, 3, 3, 2);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(150, 35);
-            this.btnCadastrar.TabIndex = 7;
+            this.btnCadastrar.TabIndex = 9;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
@@ -63,7 +64,7 @@
             this.lbUser.Location = new System.Drawing.Point(78, 53);
             this.lbUser.Name = "lbUser";
             this.lbUser.Size = new System.Drawing.Size(55, 17);
-            this.lbUser.TabIndex = 8;
+            this.lbUser.TabIndex = 2;
             this.lbUser.Text = "Usuário:";
             // 
             // lbSenha
@@ -75,7 +76,7 @@
             this.lbSenha.Location = new System.Drawing.Point(83, 94);
             this.lbSenha.Name = "lbSenha";
             this.lbSenha.Size = new System.Drawing.Size(45, 17);
-            this.lbSenha.TabIndex = 9;
+            this.lbSenha.TabIndex = 4;
             this.lbSenha.Text = "Senha:";
             // 
             // lbConfirmarSenha
@@ -87,7 +88,7 @@
             this.lbConfirmarSenha.Location = new System.Drawing.Point(53, 137);
             this.lbConfirmarSenha.Name = "lbConfirmarSenha";
             this.lbConfirmarSenha.Size = new System.Drawing.Size(105, 17);
-            this.lbConfirmarSenha.TabIndex = 10;
+            this.lbConfirmarSenha.TabIndex = 6;
             this.lbConfirmarSenha.Text = "Confirmar senha:";
             // 
             // txtLogin
@@ -96,7 +97,7 @@
             this.txtLogin.Location = new System.Drawing.Point(30, 73);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(150, 20);
-            this.txtLogin.TabIndex = 11;
+            this.txtLogin.TabIndex = 3;
             // 
             // txtSenha
             // 
@@ -105,7 +106,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '•';
             this.txtSenha.Size = new System.Drawing.Size(150, 20);
-            this.txtSenha.TabIndex = 12;
+            this.txtSenha.TabIndex = 5;
             // 
             // txtConfSenha
             // 
@@ -114,7 +115,7 @@
             this.txtConfSenha.Name = "txtConfSenha";
             this.txtConfSenha.PasswordChar = '•';
             this.txtConfSenha.Size = new System.Drawing.Size(150, 20);
-            this.txtConfSenha.TabIndex = 13;
+            this.txtConfSenha.TabIndex = 7;
             // 
             // lbCrieUser
             // 
@@ -123,7 +124,7 @@
             this.lbCrieUser.Location = new System.Drawing.Point(20, 20);
             this.lbCrieUser.Name = "lbCrieUser";
             this.lbCrieUser.Size = new System.Drawing.Size(170, 30);
-            this.lbCrieUser.TabIndex = 14;
+            this.lbCrieUser.TabIndex = 1;
             this.lbCrieUser.Text = "Crie seu usuário";
             this.lbCrieUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -134,16 +135,32 @@
             this.checkBoxSenha.Location = new System.Drawing.Point(58, 181);
             this.checkBoxSenha.Name = "checkBoxSenha";
             this.checkBoxSenha.Size = new System.Drawing.Size(95, 19);
-            this.checkBoxSenha.TabIndex = 15;
+            this.checkBoxSenha.TabIndex = 8;
             this.checkBoxSenha.Text = "Mostrar senha";
             this.checkBoxSenha.UseVisualStyleBackColor = true;
             this.checkBoxSenha.CheckedChanged += new System.EventHandler(this.checkBoxSenha_CheckedChanged);
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.BackColor = System.Drawing.Color.Gray;
+            this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVoltar.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.ForeColor = System.Drawing.Color.White;
+            this.btnVoltar.Location = new System.Drawing.Point(31, 240);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(150, 35);
+            this.btnVoltar.TabIndex = 10;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // CadastreSe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(214, 291);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.checkBoxSenha);
             this.Controls.Add(this.lbCrieUser);
             this.Controls.Add(this.txtConfSenha);
@@ -154,6 +171,8 @@
             this.Controls.Add(this.lbUser);
             this.Controls.Add(this.btnCadastrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CadastreSe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastre-se";
@@ -173,5 +192,6 @@
         private System.Windows.Forms.TextBox txtConfSenha;
         private System.Windows.Forms.Label lbCrieUser;
         private System.Windows.Forms.CheckBox checkBoxSenha;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

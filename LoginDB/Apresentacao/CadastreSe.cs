@@ -42,5 +42,10 @@ namespace LoginDB.Apresentacao
                 txtConfSenha.PasswordChar = '•';
             }
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
