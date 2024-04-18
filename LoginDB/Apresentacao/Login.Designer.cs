@@ -60,7 +60,7 @@ namespace LoginDB
             this.lbUser.BackColor = System.Drawing.Color.Transparent;
             this.lbUser.Font = new System.Drawing.Font("Segoe UI Variable Display", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbUser.Location = new System.Drawing.Point(29, 53);
+            this.lbUser.Location = new System.Drawing.Point(80, 53);
             this.lbUser.Name = "lbUser";
             this.lbUser.Size = new System.Drawing.Size(55, 17);
             this.lbUser.TabIndex = 1;
@@ -92,7 +92,7 @@ namespace LoginDB
             this.lbSenha.BackColor = System.Drawing.Color.Transparent;
             this.lbSenha.Font = new System.Drawing.Font("Segoe UI Variable Display", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbSenha.Location = new System.Drawing.Point(29, 94);
+            this.lbSenha.Location = new System.Drawing.Point(85, 94);
             this.lbSenha.Name = "lbSenha";
             this.lbSenha.Size = new System.Drawing.Size(45, 17);
             this.lbSenha.TabIndex = 3;
@@ -123,6 +123,7 @@ namespace LoginDB
             this.btnLogin.TabIndex = 6;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnApagar
             // 

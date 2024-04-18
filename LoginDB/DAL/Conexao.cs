@@ -3,23 +3,31 @@ using System.Data.SqlClient;
 
 namespace LoginDB.DAL
 {
-    internal class Conexao
+    public class Conexao
     {
-        private SqlConnection conn;
+        SqlConnection conn = new SqlConnection();
 
         public Conexao() //estabelece conexao com o banco
         {
-            conn = new SqlConnection(@"Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;");//string de conexao
-            conn.Open();
+            conn.ConnectionString = @"Data Source=RAZANI\SQLEXPRESS;Initial Catalog=Registros;Integrated Security=True;Connect Timeout=30;";//string de conexao
         }
 
-        public void InserirDados(string idLogin, string nome, string senha)
+        public SqlConnection Conectar()
         {
-            SqlCommand cmd = new SqlCommand("INSERT INTO autenticacao(IdLogin, Nome, Senha) VALUES(@IdLogin, @Nome, @Senha)", conn);
-            cmd.Parameters.AddWithValue("@IdLogin", idLogin);
-            cmd.Parameters.AddWithValue("@Nome", nome);
-            cmd.Parameters.AddWithValue("@Senha", senha);
-            cmd.ExecuteNonQuery();
+            if (conn.State==System.Data.ConnectionState.Closed)
+            {
+                conn.Open();
+            }
+            return conn;
+        }
+
+        public void Desconectar()
+        {
+            if (conn.State == System.Data.ConnectionState.Open)
+            {
+                conn.Close();
+            }
         }
     }
 }
+

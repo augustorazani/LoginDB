@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using LoginDB.Apresentacao;
+using LoginDB.Modelo;
 
 namespace LoginDB
 {
@@ -12,18 +13,8 @@ namespace LoginDB
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            //SqlConnection conn = new SqlConnection();
-            //conn.ConnectionString = @"Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;";
-            //conn.Open();
-            //SqlCommand cmd = new SqlCommand("INSERT INTO autenticacao(IdLogin, Nome, Senha) VALUES( , , ,)");
-
-
-        }
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
 
         private void txtUser_TextChanged(object sender, EventArgs e)
@@ -53,7 +44,30 @@ namespace LoginDB
         {
             txtUser.Text = "";
             txtSenha.Text = "";
-            txtLogin.Focus();
+            txtUser.Focus();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            Controllers controllers = new Controllers();
+            controllers.Acessar(txtUser.Text, txtSenha.Text); //envia os dados que o usuario digita através do metodo Acessar
+            if (controllers.mensagem.Equals(""))
+            {
+                if (controllers.tem)
+                {
+                    MessageBox.Show("Logado com sucesso!", "Entrando", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    BemVindo bv = new BemVindo();
+                    bv.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Login não encontrado, verifique login e senha.", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show(controllers.mensagem); //caso haja mensagem com erro, irá exibir na tela
+            }
         }
     }
 }

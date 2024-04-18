@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\LoginDB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|c:\\users\\user\\source\\repos\\logindb\\logindb\\apresentacao\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|c:\\users\\user\\source\\repos\\logindb\\logindb\\apresentacao\\cadastrese.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|solutionrelative:logindb\\apresentacao\\cadastrese.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|C:\\Users\\User\\source\\repos\\LoginDB\\logindb\\apresentacao\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|solutionrelative:logindb\\apresentacao\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|c:\\users\\user\\source\\repos\\logindb\\logindb\\dal\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|solutionrelative:logindb\\dal\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|c:\\users\\user\\source\\repos\\logindb\\logindb\\apresentacao\\cadastrese.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|C:\\Users\\User\\source\\repos\\LoginDB\\logindb\\apresentacao\\cadastrese.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|solutionrelative:logindb\\apresentacao\\cadastrese.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|c:\\users\\user\\source\\repos\\logindb\\logindb\\apresentacao\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|C:\\Users\\User\\source\\repos\\LoginDB\\logindb\\apresentacao\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|solutionrelative:logindb\\apresentacao\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|c:\\users\\user\\source\\repos\\logindb\\logindb\\apresentacao\\bemvindo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|solutionrelative:logindb\\apresentacao\\bemvindo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|c:\\users\\user\\source\\repos\\logindb\\logindb\\modelo\\controllers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1AC1238-F1C3-4DE3-A20C-5DF6F0AFFFAB}|LoginDB\\LoginDB.csproj|solutionrelative:logindb\\modelo\\controllers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -67,56 +59,27 @@
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BemVindo.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LoginDB\\LoginDB\\Apresentacao\\BemVindo.cs",
-              "RelativeDocumentMoniker": "LoginDB\\Apresentacao\\BemVindo.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\LoginDB\\LoginDB\\Apresentacao\\BemVindo.cs [Design]",
-              "RelativeToolTip": "LoginDB\\Apresentacao\\BemVindo.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "CadastreSe.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LoginDB\\LoginDB\\Apresentacao\\CadastreSe.cs",
+              "RelativeDocumentMoniker": "LoginDB\\Apresentacao\\CadastreSe.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LoginDB\\LoginDB\\Apresentacao\\CadastreSe.cs",
+              "RelativeToolTip": "LoginDB\\Apresentacao\\CadastreSe.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAACkAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T22:10:41.482Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-18T16:53:18.847Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Conexao.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LoginDB\\LoginDB\\DAL\\Conexao.cs",
-              "RelativeDocumentMoniker": "LoginDB\\DAL\\Conexao.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\LoginDB\\LoginDB\\DAL\\Conexao.cs",
-              "RelativeToolTip": "LoginDB\\DAL\\Conexao.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAgwA8AAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T19:00:36.355Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Controllers.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LoginDB\\LoginDB\\Modelo\\Controllers.cs",
-              "RelativeDocumentMoniker": "LoginDB\\Modelo\\Controllers.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\LoginDB\\LoginDB\\Modelo\\Controllers.cs",
-              "RelativeToolTip": "LoginDB\\Modelo\\Controllers.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T18:40:55.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LoginDB\\LoginDB\\Apresentacao\\Login.cs",
               "RelativeDocumentMoniker": "LoginDB\\Apresentacao\\Login.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\LoginDB\\LoginDB\\Apresentacao\\Login.cs",
               "RelativeToolTip": "LoginDB\\Apresentacao\\Login.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAswDMAAAAyAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA5wBoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-09T17:45:47.278Z",
               "EditorCaption": ""
