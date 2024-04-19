@@ -10,3 +10,16 @@ C:\Users\User\source\repos\LoginDB\LoginDB\obj\Debug\LoginDB.pdb
 C:\Users\User\source\repos\LoginDB\LoginDB\obj\Debug\LoginDB.Apresentacao.BemVindo.resources
 C:\Users\User\source\repos\LoginDB\LoginDB\obj\Debug\LoginDB.Apresentacao.CadastreSe.resources
 C:\Users\User\source\repos\LoginDB\LoginDB\obj\Debug\LoginDB.Login.resources
+C:\Users\augusto\Source\Repos\LoginDB\LoginDB\bin\Debug\LoginDB.exe.config
+C:\Users\augusto\Source\Repos\LoginDB\LoginDB\bin\Debug\LoginDB.exe
+C:\Users\augusto\Source\Repos\LoginDB\LoginDB\bin\Debug\LoginDB.pdb
+C:\Users\augusto\Source\Repos\LoginDB\LoginDB\obj\Debug\LoginDB.csproj.AssemblyReference.cache
+C:\Users\augusto\Source\Repos\LoginDB\LoginDB\obj\Debug\LoginDB.Apresentacao.BemVindo.resources
+C:\Users\augusto\Source\Repos\LoginDB\LoginDB\obj\Debug\LoginDB.Apresentacao.CadastreSe.resources
+C:\Users\augusto\Source\Repos\LoginDB\LoginDB\obj\Debug\LoginDB.Login.resources
+C:\Users\augusto\Source\Repos\LoginDB\LoginDB\obj\Debug\LoginDB.Properties.Resources.resources
+C:\Users\augusto\Source\Repos\LoginDB\LoginDB\obj\Debug\LoginDB.csproj.GenerateResource.cache
+C:\Users\augusto\Source\Repos\LoginDB\LoginDB\obj\Debug\LoginDB.csproj.CoreCompileInputs.cache
+C:\Users\augusto\Source\Repos\LoginDB\LoginDB\obj\Debug\LoginDB.exe
+C:\Users\augusto\Source\Repos\LoginDB\LoginDB\obj\Debug\LoginDB.pdb
+C:\Users\augusto\Source\Repos\LoginDB\LoginDB\obj\Debug\LoginDB.Apresentacao.Interface.resources

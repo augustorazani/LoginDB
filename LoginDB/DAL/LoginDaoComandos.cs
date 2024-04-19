@@ -8,10 +8,11 @@ namespace LoginDB.DAL
     {
         public bool tem = false;
         public String mensagem = ""; //se retornar vazia = tudo ok, sem erros
-        SqlCommand cmd = new SqlCommand();
-        Conexao conn = new Conexao();
-        SqlDataReader dr;
+        private SqlCommand cmd = new SqlCommand();
+        private Conexao conn = new Conexao();
+        private SqlDataReader dr;
 
+        #region Métodos
         public bool VerificaLogin(String nome, String senha) //existe login no banco v ou f
         {
             //comandos sql para checar no DB
@@ -31,17 +32,17 @@ namespace LoginDB.DAL
             }
             catch (SqlException)
             {
-
                 this.mensagem = "Erro com o Banco de Dados!";
             }
             return tem;
         }
+
         public String Cadastrar(String nome, String senha, String confSenha)
         {
             //comandos sql para cadastrar user
             tem = false;
-            if (senha.Equals(confSenha)&& nome != "" && senha !="")
-            {
+            if (senha.Equals(confSenha) && nome != "" && senha != "")
+
                 if (nome.Length < 4)
                 {
                     MessageBox.Show("O usuário deve conter 4 caracteres ou mais.");
@@ -50,7 +51,8 @@ namespace LoginDB.DAL
                 {
                     MessageBox.Show("A senha deve conter 4 caracteres ou mais.");
                 }
-                else {
+                else
+                {
                     cmd.CommandText = "insert into autenticacao values (@nome, @senha)";
                     cmd.Parameters.AddWithValue("@nome", nome);
                     cmd.Parameters.AddWithValue("@senha", senha);
@@ -68,12 +70,14 @@ namespace LoginDB.DAL
                         this.mensagem = "Erro com o Banco de Dados!";
                     }
                 }
-            }
             else
             {
                 this.mensagem = "Verifique os dados inseridos";
             }
             return mensagem;
         }
+
+
+        #endregion
     }
 }

@@ -56,8 +56,14 @@ namespace LoginDB
                 if (controllers.tem)
                 {
                     MessageBox.Show("Logado com sucesso!", "Entrando", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    BemVindo bv = new BemVindo();
-                    bv.Show();
+                    //Login login = new Login();
+                    //login.Close();
+                    //BemVindo bv = new BemVindo();
+                    //bv.Show();
+                    txtUser.Text = "";
+                    txtSenha.Text = "";
+                    Interface it = new Interface();
+                    it.Show();
                 }
                 else
                 {

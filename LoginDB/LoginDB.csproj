@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -58,6 +59,12 @@
     <Compile Include="Apresentacao\CadastreSe.Designer.cs">
       <DependentUpon>CadastreSe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apresentacao\Interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\Interface.Designer.cs">
+      <DependentUpon>Interface.cs</DependentUpon>
+    </Compile>
     <Compile Include="Apresentacao\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,13 +74,16 @@
     <Compile Include="DAL\Conexao.cs" />
     <Compile Include="DAL\LoginDaoComandos.cs" />
     <Compile Include="Modelo\Controllers.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Apresentacao\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Apresentacao\BemVindo.resx">
       <DependentUpon>BemVindo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apresentacao\CadastreSe.resx">
       <DependentUpon>CadastreSe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentacao\Interface.resx">
+      <DependentUpon>Interface.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apresentacao\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

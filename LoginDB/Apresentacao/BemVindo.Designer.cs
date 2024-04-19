@@ -38,20 +38,22 @@
             this.lbBemVindo.BackColor = System.Drawing.SystemColors.Control;
             this.lbBemVindo.Font = new System.Drawing.Font("Segoe UI Variable Display", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBemVindo.ForeColor = System.Drawing.Color.Purple;
-            this.lbBemVindo.Location = new System.Drawing.Point(15, 51);
+            this.lbBemVindo.Location = new System.Drawing.Point(12, 62);
+            this.lbBemVindo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbBemVindo.Name = "lbBemVindo";
-            this.lbBemVindo.Size = new System.Drawing.Size(287, 75);
+            this.lbBemVindo.Size = new System.Drawing.Size(383, 92);
             this.lbBemVindo.TabIndex = 0;
             this.lbBemVindo.Text = "Bem Vindo!";
             // 
             // BemVindo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(314, 191);
+            this.ClientSize = new System.Drawing.Size(402, 233);
             this.Controls.Add(this.lbBemVindo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "BemVindo";

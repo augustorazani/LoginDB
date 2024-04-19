@@ -1,12 +1,15 @@
 ﻿using LoginDB.DAL;
 using System;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
+
 namespace LoginDB.Modelo
 {
     public class Controllers
     {
         public bool tem;
         public String mensagem = "";
+
+        #region Métodos
         public bool Acessar(String nome, String senha)
         {
             LoginDaoComandos loginDao = new LoginDaoComandos();
@@ -26,6 +29,12 @@ namespace LoginDB.Modelo
             {
                 this.tem = true;
             }
+            return mensagem;
+        }
+        #endregion
+        public String AdicionarUser(String nome, String senha, String confSenha)
+        {
+
             return mensagem;
         }
     }
