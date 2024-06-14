@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Dapper;
+using System;
 using System.Data.SqlClient;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace LoginDB.DAL
@@ -10,24 +12,26 @@ namespace LoginDB.DAL
         public String mensagem = ""; //se retornar vazia = tudo ok, sem erros
         private SqlCommand cmd = new SqlCommand();
         private Conexao conn = new Conexao();
-        private SqlDataReader dr;
 
         #region Métodos
-        public bool VerificaLogin(String nome, String senha) //existe login no banco v ou f
+        public bool VerificaLogin(string nome, string senha) // existe login no banco v ou f
         {
-            //comandos sql para checar no DB
-            cmd.CommandText = "select * from autenticacao where nome = @nome and senha = @senha";
-            cmd.Parameters.AddWithValue("@nome", nome); //login do parametro do metodo, ira substituir o @login do comando sql
-            cmd.Parameters.AddWithValue("@senha", senha);
-
             try
             {
-                cmd.Connection = conn.Conectar();
-                dr = cmd.ExecuteReader(); //utilizado para trazer infos do DB, por isso não é utilizado o ExecuteNonQuery
-                                          //dr recebera todas as infos buscadas
-                if (dr.HasRows)
+                var sql = @"SELECT * FROM autenticacao WHERE Nome = @Nome AND Senha = @Senha";
+                var parametros = new
                 {
-                    tem = true; //se encontrar linhas no DB, retornara True
+                    Nome = nome,
+                    Senha = senha
+                };
+
+                using (var conexao = new SqlConnection(Conexao.Connection))
+                {
+                    conexao.Open();
+                    var result = conexao.Query(sql, parametros);
+
+                    // Verifica se o resultado contém linhas
+                    tem = result.Any();
                 }
             }
             catch (SqlException)
@@ -36,6 +40,7 @@ namespace LoginDB.DAL
             }
             return tem;
         }
+
 
         public String Cadastrar(String nome, String senha, String confSenha)
         {
@@ -59,7 +64,7 @@ namespace LoginDB.DAL
 
                     try
                     {
-                        cmd.Connection = conn.Conectar();
+                        Conexao.Conectar();
                         cmd.ExecuteNonQuery();
                         conn.Desconectar();
                         this.mensagem = "Cadastrado com sucesso!";
@@ -75,9 +80,8 @@ namespace LoginDB.DAL
                 this.mensagem = "Verifique os dados inseridos";
             }
             return mensagem;
+
+            #endregion
         }
-
-
-        #endregion
     }
 }

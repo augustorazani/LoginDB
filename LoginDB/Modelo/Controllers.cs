@@ -1,6 +1,5 @@
 ﻿using LoginDB.DAL;
 using System;
-using System.Runtime.Remoting.Metadata.W3cXsd2001;
 
 namespace LoginDB.Modelo
 {
@@ -34,7 +33,6 @@ namespace LoginDB.Modelo
         #endregion
         public String AdicionarUser(String nome, String senha, String confSenha)
         {
-
             return mensagem;
         }
     }
